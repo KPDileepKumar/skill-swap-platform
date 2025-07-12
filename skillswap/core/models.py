@@ -60,4 +60,4 @@ class Requests(models.Model):
     id=models.UUIDField(default=uuid.uuid4,primary_key=True,unique=True,editable=False)
 
     def __str__(self):
-        return f"{self.sender} --> {self.recipient}"
+        return f"{self.sender}-->{self.recipient}"
